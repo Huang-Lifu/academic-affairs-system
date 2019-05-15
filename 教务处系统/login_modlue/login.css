@@ -1,0 +1,46 @@
+.auth_login_content{
+		height:200px;
+		width:233px;
+		margin:0;
+	}
+	
+	.auth_login_content p{
+		margin-top: 0;
+		margin-bottom: 25px;
+	}
+	.auth_login_content input {
+		
+		padding: 7px 12px;
+		font-size: 14px;
+	}
+	.auth_icon_user{
+	    background: url(./icons.png) 6px -73px  no-repeat;
+		background-color: rgb(242, 242, 242);
+		width: 32px;
+		height: 32px;
+		float: left;
+		border: 1px solid #ccc;
+	}
+	.auth_icon_pwd{
+	    background: url(./icons.png) -19px -73px  no-repeat;
+		background-color: rgb(242, 242, 242);
+		width: 32px;
+		height: 32px;
+		float: left;
+		border: 1px solid #ccc;
+	}
+	.auth_login_btn{
+		border-radius: 3px;
+		text-decoration: none;
+		border:s1px solid transparent;
+		font-size:1.5em;
+		width:100%;
+		border: 1px solid;
+		padding:0;
+	}
+	.auth_login_btn:link, visited {
+	background-color:GreenYellow ;
+	}
+	.auth_login_btn:hover, active {
+	background-color:GreenYellow ;
+}
