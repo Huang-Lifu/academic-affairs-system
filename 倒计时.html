@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>倒计时</title>
+</head>
+
+<body>
+	<p style="font-size:200%">30分钟倒计时</p>
+	<button onclick="myFunction()" style="font-size:200%">开始</button>
+	
+	<script>
+		var date=new Date();
+		var time_from_1970 = date.getTime();			//从1970年到现在，单位毫秒
+		var deadline = time_from_1970 + 30*60*1000;
+		console.log(time_from_1970);
+		console.log(deadline);
+		
+		console.log(typeof date); //打印变量类型
+		console.log(typeof time_from_1970);
+		console.log(typeof deadline);
+		
+		function myFunction(){
+			//	当前时间
+			//	setInterval(function(){document.getElementById('demo').innerHTML = Date()},1000);
+			
+			//	倒计时更新线程。
+			setInterval(
+				function(){
+					date=new Date();
+					var remider;
+					time_from_1970 = date.getTime();
+					remider = (deadline - time_from_1970)/1000/60;
+					document.getElementById('countdownprint').innerHTML =remider.toFixed(2)+"分钟";
+					
+					console.log(time_from_1970);
+				}
+				,1);
+		}
+	</script>
+
+	<p id="demo"></p>
+	<p id="countdownprint" style="font-size:300%"></p>
+	
+</body>
+</html>
